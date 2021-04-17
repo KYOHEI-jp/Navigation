@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
-d
 class ConfirmationFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
@@ -14,10 +13,6 @@ class ConfirmationFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
     }
 
     override fun onCreateView(
@@ -37,14 +32,6 @@ class ConfirmationFragment : Fragment() {
          * @param param2 Parameter 2.
          * @return A new instance of fragment ConfirmationFragment.
          */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            ConfirmationFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
     }
+
 }
